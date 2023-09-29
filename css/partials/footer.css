@@ -1,0 +1,18 @@
+/* Footer */
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-24);
+}
+
+.footer__navbar--modifier {
+    height: 271px;
+    
+}
+
+.footer__copy {
+    
+    text-align: center;
+    font-size: var(--font-lmedium);
+}
+
+

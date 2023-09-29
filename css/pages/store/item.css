@@ -1,0 +1,6 @@
+.item {
+    display: flex;
+    margin: var(--spacing-68);
+    align-items: center;
+}
+
