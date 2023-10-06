@@ -5,6 +5,7 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    height: 388px;
 }
 
 .hero::before {
@@ -25,28 +26,35 @@
     align-items: start;
     z-index: 2;
     position: relative;
+    bottom: var(--spacing-36);
 }
 
 .hero__title {
     font-family: var(--alternative-font);
-    font-size: var(--font-jumbo);
+    font-size: var(--font-jumbo-38);
     color: var(--light-font-solid);
+    font-weight: 700;
+    
 }
 
 .hero__text {
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
-    font-size: var(--font-medium);
+    font-size: var(--font-medium-18);
+    font-weight: 400;
+    margin-bottom: var(--spacing-36);
 }
 
 .hero__link {
     display: inline-block;
-    font-size: var(--font-medium);
+    font-family: var(--base-font);
+    font-size: var(--font-medium-18);
     background-color: var(--light-bg-solid);
     padding: var(--spacing-12) var(--spacing-68);
     border-radius: 50px;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
+    
 }
 
 .hero__link:hover {
@@ -55,11 +63,16 @@
 }
 
 /* COLLECTIONS */
+.main-container {
+    margin-top: var(--spacing-68);
+}
+
 .collection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: var(--spacing-16) 0;
+    height: 600px;
 }
 
 .collection:nth-child(2) .collection__cover {
@@ -75,35 +88,18 @@
 
 .collection__title {
     font-family: var(--alternative-font);
-    font-size: var(--font-display);
+    font-size: var(--font-display-46);
     font-weight: 500;
+    
 }
 
 .collection__text {
     font-family: var(--alternative-font);
-    font-size: var(--font-large);
-    font-weight: 300;
+    font-size: var(--font-large-24);
+    font-weight: 400;
     border-bottom: 2px solid var(--primary-solid);
     padding-bottom:  var(--spacing-20);
 }
-
-.collection__link {
-    display: inline-block;
-    font-size: var(--font-medium);
-    background-color: var(--dark-bg-solid);
-    color: var(--light-font-solid);
-    padding: var(--spacing-16) var(--spacing-36);
-    border-radius: 50px;
-    font-weight: 500;
-    transition: background 0.3s ease-in-out;
-}
-
-.collection__link:hover {
-    background-color: var(--primary-900);
-}
-
-
-
 
 
 

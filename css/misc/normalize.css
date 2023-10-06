@@ -12,6 +12,10 @@ html {
     color: var(--dark-solid);
 }
 
+body {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
     font-family: inherit;
@@ -35,4 +39,14 @@ p {
 
 img {
     width: 100%;
+}
+
+/* Desactivar las flechas en number */
+input[type= "number"]::-webkit-outer-spin-button,
+input[type= "number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input[type= "checkbox"] {
+    appearance: none;
 }

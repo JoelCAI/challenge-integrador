@@ -2,6 +2,7 @@
 .footer {
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-24);
+    height: 343px;
 }
 
 .footer__navbar--modifier {
@@ -12,7 +13,7 @@
 .footer__copy {
     
     text-align: center;
-    font-size: var(--font-lmedium);
+    font-size: var(--font-lmedium-20);
 }
 
 

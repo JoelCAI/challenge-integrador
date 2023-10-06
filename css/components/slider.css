@@ -1,5 +1,6 @@
 /* SLIDER */
 
+
 .slider {
     display: flex;
     flex-direction: column;
@@ -7,15 +8,20 @@
     margin: var(--spacing-68) auto;
 }
 
+.slider--margin {
+    margin-top: 0;
+}
+
 .slider__title {
     font-family: var(--alternative-font);
-    font-size: var(--font-display);
+    font-size: var(--font-display-46);
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 iconify-icon{
     color: var(--dark-bg-solid);
-    font-size: var(--font-small);
+    font-size: var(--font-small-16);
     font-weight: 700;
 }
 
@@ -25,8 +31,4 @@ iconify-icon{
 
 .glide__arrow--right{
     right: 0;
-}
-
-.slider__tittle-item {
-    font-size: var(--font-jumbo);
 }

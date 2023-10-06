@@ -1,16 +1,22 @@
+.card-item__link{
+    display: flex;
+    flex-direction: column;
+}
+
 .card-item__cover {
     display: flex;
     position: relative;
 }
 
 .card-item__tag {
-    font-size: var(--font-xsmall);
+    font-size: var(--font-xsmall-14);
     text-transform: uppercase;
     background-color: var(--primary-solid);
     color: var(--light-font-solid);
     padding: var(--spacing-8) var(--spacing-12);
     position: absolute;
     right: 0;
+    font-weight: 500;
 }
 
 .card-item__cover img {
@@ -34,24 +40,26 @@
     flex-direction: column;
     gap: var(--spacing-12);
     padding: var(--spacing-16);
+    font-family: var(--base-font);
 }
 
 .card-item__licence {
-    font-size: var(--font-xsmall);
+    font-size: var(--font-xsmall-14);
     font-weight: 500;
 }
 
 .card-item__name {
-    font-size: var(--font-medium);
+    font-size: var(--font-medium-18);
     font-weight: 700;
 }
 
 .card-item__price {
-    font-size: var(--font-small);
+    font-size: var(--font-small-16);
+    font-weight: 400;
 }
 
 .card-item__promo {
-    font-size: var(--font-xsmall);
+    font-size: var(--font-vsmall-12);
     color: var(--secondary-solid);
     font-weight: 700;
 }

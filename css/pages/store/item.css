@@ -1,6 +1,119 @@
 .item {
-    display: flex;
-    margin: var(--spacing-68);
+    display: grid;
+    font-family: var(--base-font);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 550px;
+    grid-template-areas: 
+        "item description";
+    margin: var(--spacing-68) 0;
     align-items: center;
+    height: 550px;
+    gap: var(--spacing-20);
 }
+
+.item__img {
+    grid-area: item;
+}
+
+.item__info {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    height: 320px;
+}
+
+.item__licence {
+    font-size: var(--font-small-16);
+    font-weight: 500;
+}
+
+.item__name {
+    font-size: var(--font-jumbo-38);
+}
+
+.item__description {
+    font-size: var(--font-large-24);
+    font-weight: 400;
+    width: 570px;
+}
+
+.item__price {
+    font-size: var(--font-jumbo-38);
+    font-weight: 400;
+}
+
+.item__cart {
+    display: flex;
+    height: 38px;
+}
+
+.item__cart__quantity {
+    display: flex;
+    height: 35.24px;
+}
+
+.item__input {
+    text-align: center;
+    width: 105.47px;
+    font-size: var(--font-large-24);
+    border-radius: 0;
+    border: 0.5px solid var(--gray--border-button);
+}
+
+.item__cart__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    margin-left: 10px;
+   
+}
+
+.item__quantity--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-bg-solid);
+    background-color: var(--gray-bg-solid);
+    width: var(--spacing-18);
+    height: var(--spacing-16);
+    cursor: pointer;
+    border: none;
+}
+
+.item__quantity--button:active {
+    width: var(--spacing-17);
+    height: var(--spacing-15);
+    margin: 0.5px;
+}
+
+.item__quantity--button img {
+    width: 8px;
+    color: var(--light-bg-solid);
+    background-color: var(--gray-bg-solid);
+    
+}
+
+/* Agregar al carrito */
+.item__submit {
+    width: 181px;
+    height: 35.24px;
+}
+
+.item__submit:active {
+    width: 180px;
+    height: 34.24px;
+    margin: 0.5px;
+}
+
+/* Item promo */
+.item__promo {
+    width: 333.2px;
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: var(--font-xsmall-14);
+    color: var(--secondary-solid);
+}
+
 

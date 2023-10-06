@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar container">
             <picture class="navbar__logo">
-                <a href="../../pages/store/index.html">
+                <a href="../../index.html">
                     <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo Funkoshop">
                 </a>
             </picture>
@@ -45,8 +45,191 @@
         </nav>
     </header>
 
+    <main class="container product">
+        <section class="formQuery">
+            <p class="formQuery__title">Buscar</p>
+            <input type="text" class="inputText formQuery__buscar" id="formQuery--buscar" placeholder="item o categoría">
+            <p class="formQuery__order">Ordenar por</p>
+            <select class="selectOption selectOption__shop" name="formOrden" id="form__Orden" >
+                <option class="select__holder" value="" disable selected>Mayor a Menor</option>
+                <option value="Orden 1">Orden 1</option>
+                <option value="Orden 2">Orden 2</option>
+                <option value="Orden 3">Orden 3</option>
+                <option value="Orden 4">Orden 4</option>
+                <option value="Orden 5">Orden 5</option>
+            </select>
+            <p class="formQuery__price--title">Precio</p>
+            <div class="formQuery__price__block">
+                <p class="formQuery__input__price">min</p>
+                <input class="formQuery__input__range" type="number" name="" id="formQuery__input__price--min" placeholder="0">
+                <p class="formQuery__input__price">-</p>
+                <p class="formQuery__input__price">max</p>
+                <input class="formQuery__input__range" type="number" name="" id="formQuery__input__price--max" placeholder="0">
+            </div>
+            <p class="formQuery__filter">Filtrar</p>
+            <div class="formQuery__checkbox">
+                <div class="formQuery__checkbox__filter">
+                    <input type="checkbox" class="formQuery__checkbox__input" name="formQuery__checkbox__shop" id="formQuery__checkbox__nuevos" value="nuevos">
+                    <label class="formQuery__checkbox__label" for ="formQuery__checkbox__nuevos" ><img id="checkbox__filter__nuevos__img" class="formQuery__checkbox__filter__img" src="../../img/icons/Check.png" alt="checkbox check">Nuevos</label>
+                </div>
+                <div class="formQuery__checkbox__filter">
+                    <input type="checkbox" class="formQuery__checkbox__input" name="formQuery__checkbox__shop" id="formQuery__checkbox__ofertas" value="ofertas">
+                    <label class="formQuery__checkbox__label" for ="formQuery__checkbox__ofertas" ><img id="checkbox__filter__ofertas__img" class="formQuery__checkbox__filter__img" src="../../img/icons/Check.png" alt="checkbox check">Ofertas</label>
+                </div>
+                <div class="formQuery__checkbox__filter">
+                    <input type="checkbox" class="formQuery__checkbox__input" name="formQuery__checkbox__shop" id="formQuery__checkbox__edicionEspecial" value="edicionEspecial">
+                    <label class="formQuery__checkbox__label" for ="formQuery__checkbox__edicionEspecial" ><img id="checkbox__filter__edicionEspecial__img" class="formQuery__checkbox__filter__img" src="../../img/icons/Check.png" alt="checkbox check">Edición Especial</label>
+                </div>
+                <div class="formQuery__checkbox__filter">
+                    <input type="checkbox" class="formQuery__checkbox__input" name="formQuery__checkbox__shop" id="formQuery__checkbox__favoritos" value="favoritos">
+                    <label class="formQuery__checkbox__label" for ="formQuery__checkbox__favoritos" ><img id="checkbox__filter__favoritos__img" class="formQuery__checkbox__filter__img" src="../../img/icons/Check.png" alt="checkbox check">Favoritos</label>
+                </div>
+                <!-- <button id="pruebaShop">Prueba</button> -->
+
+            </div>
+        </section>
+        <section class="productList">
+            <section class="productList__container">
+                <article class="card-item">
+                    <a class="card-item__link" href="../../pages/store/item.html">
+                        <picture class="card-item__cover cardShopPicture__height">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura de la saga Star Wars">
+                            <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura de la saga Star Wars en caja">
+                        </picture>
+                        <div class="card-item__content cardShopContent__height">
+                            <p class="card-item__licence">STAR WARS</p>
+                            <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-item">
+                    <a class="card-item__link" href="../../pages/store/item.html">
+                        <picture class="card-item__cover cardShopPicture__height">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura de la saga Star Wars">
+                            <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura de la saga Star Wars en caja">
+                        </picture>
+                        <div class="card-item__content cardShopContent__height">
+                            <p class="card-item__licence">STAR WARS</p>
+                            <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-item">
+                    <a class="card-item__link" href="../../pages/store/item.html">
+                        <picture class="card-item__cover cardShopPicture__height">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura de la saga Star Wars">
+                            <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura de la saga Star Wars en caja">
+                        </picture>
+                        <div class="card-item__content cardShopContent__height">
+                            <p class="card-item__licence">STAR WARS</p>
+                            <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-item">
+                    <a class="card-item__link" href="../../pages/store/item.html">
+                        <picture class="card-item__cover cardShopPicture__height">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura de la saga Star Wars">
+                            <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura de la saga Star Wars en caja">
+                        </picture>
+                        <div class="card-item__content cardShopContent__height">
+                            <p class="card-item__licence">STAR WARS</p>
+                            <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-item">
+                    <a class="card-item__link" href="../../pages/store/item.html">
+                        <picture class="card-item__cover cardShopPicture__height">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura de la saga Star Wars">
+                            <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura de la saga Star Wars en caja">
+                        </picture>
+                        <div class="card-item__content cardShopContent__height">
+                            <p class="card-item__licence">STAR WARS</p>
+                            <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-item">
+                    <a class="card-item__link" href="../../pages/store/item.html">
+                        <picture class="card-item__cover cardShopPicture__height">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura de la saga Star Wars">
+                            <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura de la saga Star Wars en caja">
+                        </picture>
+                        <div class="card-item__content cardShopContent__height">
+                            <p class="card-item__licence">STAR WARS</p>
+                            <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-item">
+                    <a class="card-item__link" href="../../pages/store/item.html">
+                        <picture class="card-item__cover cardShopPicture__height">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura de la saga Star Wars">
+                            <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura de la saga Star Wars en caja">
+                        </picture>
+                        <div class="card-item__content cardShopContent__height">
+                            <p class="card-item__licence">STAR WARS</p>
+                            <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+               
+                
+            </section>
+            <section class="pagination__container">
+                <section class="pagination">
+                    <div class="pagination__page pagination__page__bg">
+                        <img class="arrowPagination" src="../../img/icons/arrowPaginationLeft.png" alt="arrowLeft">
+                    </div>
+                    <div class="pagination__page pagination__page__target">
+                        1
+                    </div>
+                    <div class="pagination__page">
+                        2
+                    </div>
+                    <div class="pagination__page">
+                        ...
+                    </div>
+                    <div class="pagination__page">
+                        9
+                    </div>
+                    <div class="pagination__page">
+                        10
+                    </div>
+                    <div class="pagination__page">
+                        <img class="arrowPagination" src="../../img/icons/arrowPaginationRight.png" alt="arrowLeft">                    </div>
+                </section>
+            </section>   
+        </section>
+       
+        
+    </main>
+    
+
     <footer class="footer">
-        <nav class="navbar container">
+        <nav class="container navbar footer__navbar--modifier">
             <ul class="navbar__item">
                 <li class="navbar__item">
                     <a class="navbar__link" href="../../pages/store/shop.html">SHOP</a>
@@ -68,5 +251,6 @@
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="../../js/shop.js"></script>
 </body>
 </html>
