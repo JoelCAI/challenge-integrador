@@ -90,8 +90,16 @@ function checkedOrNot() {
 
 
 
+if (typeof(Storage) !== 'undefined') {
+    console.log(Storage);
+}
+else {
+    alert('No funciona el Storage')
+}
 
+const body = document.querySelector('body')
 
+console.log(body.textContent)
 
 
 

@@ -15,30 +15,55 @@
     background-color: var(--primary-900);
 }
 
-/* button red */
-.btn {
+/* Button --primary-solid */
+.btn__primary {
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: var(--font-medium-18);
-    font-weight: 400;
+    appearance: none;
+    width:100%;
+    height: 100%;
+    background-color: var(--primary-solid);
+    border: 1px solid var(--primary-solid); 
     cursor: pointer;
-    border: none;
-    margin-right: 10px;
-    transition: background 0.3s ease-in-out;
-}
-
-.btn--primary {
-    background-color: var(--primary-900);
+    transition: 0.1s ease-in-out;;
     color: var(--light-font-solid);
 }
 
-.btn--medium {
-    padding: var(--spacing-12) var(--spacing-18);
-    font-size: var(--font-medium-18);
+.btn__primary:active {
+   width: 97%;
+   height: 97%;
+   padding: 10px;
+   background-color: var(--primary-solid);
+   border: 1px solid var(--primary-solid);
 }
 
-.btn:hover {
-    background-color: var(--dark-bg-solid);
+/* Button --gray-bg-solid */
+.item__quantity--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-bg-solid);
+    background-color: var(--gray-bg-solid);
+    width: var(--spacing-18);
+    height: var(--spacing-16);
+    cursor: pointer;
+    border: none;
+}
+
+.item__quantity--button:active {
+    width: var(--spacing-16);
+    height: var(--spacing-15);
+    
+}
+
+.item__quantity--button img {
+    width: 8px;
+}
+
+/* Buttons Bg Colors*/
+.btn__primaryColor {
+    background-color: var(--primary-solid);
 }
 
 /* Input Text*/
@@ -58,8 +83,8 @@
     position: relative;
     background-image: url(../../img/icons/traingleBlack.png);
     background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 200px;
+    background-size: 1.3889vw;
+    background-position: 13.889vw;
     cursor: pointer;
 }
 

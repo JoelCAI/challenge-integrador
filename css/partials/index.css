@@ -31,6 +31,7 @@
 /* Components */
 @import url('../components/buttons.css');
 @import url('../components/card.css');
+@import url('../components/cartItem.css');
 @import url('../components/form.css');
 @import url('../components/slider.css');
 

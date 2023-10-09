@@ -17,6 +17,9 @@
     --dark-500: rgba(31,31,31,0.5);
     --dark-300: rgba(31,31,31,0.3);
 
+    --black-solid: #000000;
+    --black-solid-25: rgba(0,0,0,0.25); 
+
     --dark-bg-solid: #30343F;
     --light-bg-solid: #FAFAFF;
     --light-font-solid: #FFFFFF;
@@ -26,6 +29,7 @@
     --gray-pagination: #DFE3E8;
     --arrow-pagination-icon: #C4CDD5;
     --arrow-pagination-bg: #919EAB;
+    --gray-resumen: #747474;
 
 
     /* Typography */
@@ -35,6 +39,7 @@
     /* Font-sizes */
     --font-display-46: 4.6em;
     --font-jumbo-38: 3.8em;
+    --font-sjumbo-32: 3.2em;
     --font-xlarge-30: 3em;
     --font-large-24: 2.4em;
     --font-mlarge-22: 2.2em;
@@ -48,6 +53,7 @@
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
     --spacing-36: 3.6rem;
+    --spacing-32: 3.2rem;
     --spacing-28: 2.8rem;
     --spacing-24: 2.4rem;
     --spacing-20: 2rem;

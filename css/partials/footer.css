@@ -1,17 +1,24 @@
 /* Footer */
 .footer {
     background-color: var(--dark-bg-solid);
-    padding: var(--spacing-24);
     height: 343px;
+}   
+
+.footer__navbar {
+    width: 83.3333vw;
+    height: 271px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer__navbar--modifier {
-    height: 271px;
-    
+.footer__navbar__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .footer__copy {
-    
     text-align: center;
     font-size: var(--font-lmedium-20);
 }
