@@ -48,17 +48,18 @@
 
 <!--MAIN-->
     <section class="hero">
-        <article class="container hero__content">
+        <article class="hero__content container">
             <h3 class="hero__title">Nuevos Ingresos</h3>
             <p class="hero__text">Descubri el próximo Funko Pop de tu colección</p>
             <a class="hero__link" href="./pages/store/shop.html">SHOP</a>
         </article>
     </section> 
-    <main class="main-container">
+    <main class="main-container container">
         <section class="collection container">
             <article class="collection__content">
                 <h3 class="collection__title">STAR WARS & THE MANDALORIAN</h3>
                 <p class="collection__text">Disfruta de una saga que sigue agregando personajes a su colección</p>
+                <p class="collection__line" ></p>
                 <a class="collection__link" href="./pages/store/shop.html">VER COLECCION</a>
             </article>
             <picture class="collection__cover">
@@ -69,6 +70,7 @@
             <article class="collection__content">
                 <h3 class="collection__title">POKEMON INDIGO</h3>
                 <p class="collection__text">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                <p class="collection__line" ></p>    
                 <a class="collection__link" href="./pages/store/shop.html">VER COLECCION</a>
             </article>
             <picture class="collection__cover">
@@ -79,6 +81,7 @@
             <article class="collection__content">
                 <h3 class="collection__title">HARRY POTTER</h3>
                 <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto</p>
+                <p class="collection__line" ></p>
                 <a class="collection__link" href="./pages/store/shop.html">VER COLECCION</a>
             </article>
             <picture class="collection__cover">
@@ -86,7 +89,7 @@
             </picture>
         </section>
 
-        <section class="slider container glide slider--margin">
+        <section class="slider container glide">
             <h2 class="slider__title">Ultimos Lanzamientos</h2>
             <div class="glide__track" data-glide-el="track">
                 <ul class="slider__items glide__slides">
@@ -152,8 +155,8 @@
     
 <!--FOOTER-->    
     <footer class="footer">
-        <nav class="navbar container footer__navbar--modifier">
-            <ul class="navbar__item">
+        <nav class="container footer__navbar">
+            <ul class="footer__navbar__container">
                 <li class="navbar__item">
                     <a class="navbar__link" href="./pages/store/shop.html">SHOP</a>
                 </li>
@@ -167,7 +170,7 @@
                     <a class="navbar__link" href="./pages/store/contact.html">CONTACTO</a>
                 </li>            
             </ul>
-            <picture>
+            <picture class="footer__navbar__img">
                 <img src="./img/branding/isotype.svg" alt="Logo Funkoshop">
             </picture>
         </nav>

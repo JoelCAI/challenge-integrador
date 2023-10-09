@@ -67,44 +67,21 @@
     justify-content: space-between;
     width: 50px;
     margin-left: 10px;
-   
 }
 
-.item__quantity--button {
+/*Boton Agregar al carrito */
+.item__agregar__button {
+    width: 190px;
+    height: 37.91px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--light-bg-solid);
-    background-color: var(--gray-bg-solid);
-    width: var(--spacing-18);
-    height: var(--spacing-16);
-    cursor: pointer;
-    border: none;
-}
+}  
 
-.item__quantity--button:active {
-    width: var(--spacing-17);
-    height: var(--spacing-15);
-    margin: 0.5px;
-}
-
-.item__quantity--button img {
-    width: 8px;
-    color: var(--light-bg-solid);
-    background-color: var(--gray-bg-solid);
-    
-}
-
-/* Agregar al carrito */
-.item__submit {
-    width: 181px;
-    height: 35.24px;
-}
-
-.item__submit:active {
-    width: 180px;
-    height: 34.24px;
-    margin: 0.5px;
+.item__agregar__button__font {
+    font-family: var(--base-font);
+    font-size: var(--font-medium-18);
+    font-weight: 400;
 }
 
 /* Item promo */
@@ -116,4 +93,7 @@
     color: var(--secondary-solid);
 }
 
+.item__promo__link {
+    text-decoration: underline;
+}
 

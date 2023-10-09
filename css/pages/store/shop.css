@@ -6,7 +6,7 @@
 }
 
 .formQuery {
-    width: 243.04px;
+    width: 16.8778vw;
     height: 493.93px;
     display: flex;
     flex-direction: column;
@@ -21,23 +21,25 @@
 }
 
 .formQuery__buscar {
-    width: 243.03px;
+    width: 16.8771vw;
     height: 44.28px;
     font-size: var(--font-lmedium-20);
     font-weight: 500;
 }
 
 .formQuery__order {
+    width: 16.8771vw;
     font-size: var(--font-large-24);
     font-weight: 500;
+    
 }
 
 .selectOption__shop {
-    width: 243.03px;
+    width: 16.8771vw;
     height: 44.28px;
     font-size: var(--font-lmedium-20);
     font-weight: 500;
-    padding-left: 12px;
+    padding-left: 0.8333vw;
     color: var(--dark-bg-solid);
 }
 
@@ -49,15 +51,13 @@
 
 .formQuery__price__block {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 234.29;
+    width: 16.2701vw;
     height: 27.52px;
-    gap: 14px;
 }
 
 .formQuery__input__price {
-    width: 31px;
     height: 19px;
     font-size: var(--font-small-16);
     font-weight: 500;
@@ -65,14 +65,18 @@
 }
 
 .formQuery__input__range {
-    width: 59.14px;
+    width: 4.1069vw;
     height: 27.52px;
     border: 2px solid var(--dark-bg-solid);
     border-radius: 6px;
-    padding: var(--spacing-12);
     color: var(--dark-bg-solid);
     font-size: var(--font-lmedium-20);
     text-align: center;
+}    
+
+.formQuery__input__range__img {
+    width: 20px;
+    height: 20px;
 }
 
 /* Filtrar */
@@ -83,7 +87,7 @@
 
 /* Checkbox */
 .formQuery__checkbox {
-    width: 210.12px;
+    width: 14.5917vw;
     height: 123.94px;
     display: flex;
     flex-direction: column;
@@ -109,11 +113,10 @@
     left: 3px;
     top:3px;
     display: none;
-
 }
 
 .formQuery__checkbox__input {
-    width: 24px;
+    width: 1.6667vw;
     height: 24px;
     border: 2px solid var(--dark-bg-solid);
     border-radius: 6px;
@@ -124,12 +127,12 @@
 .formQuery__checkbox__label {
     font-size: var(--font-medium-18);
     font-weight: 500;
-    margin-left: 6px;
+    margin-left: 0.4167vw;
 }
 
 /* Fetch Products */
 .productList {
-    width: 960.03px;
+    width: 66.6688vw;
     height:1788px;
     display: flex;
     flex-direction: column;
@@ -145,13 +148,13 @@
 }
 
 .cardShopPicture__height {
-    height: 334.2px;
-    width: 320,01px;
+    height: 23.2083vw;
+    width: 22.2229vw;
 }
 
 .cardShopContent__height {
     height: 201.7px;
-    width: 320,01px;
+    width: 22.2229vw;
 }
 
 /* Paginación */

@@ -1,11 +1,12 @@
 /* Hero */
 .hero {
     background-image: url(../../../img/funkos-banner.webp);
-    padding: var(--spacing-128);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     height: 388px;
+    display: flex;
+    align-items: center;
 }
 
 .hero::before {
@@ -26,7 +27,7 @@
     align-items: start;
     z-index: 2;
     position: relative;
-    bottom: var(--spacing-36);
+    width: 100%;
 }
 
 .hero__title {
@@ -34,7 +35,6 @@
     font-size: var(--font-jumbo-38);
     color: var(--light-font-solid);
     font-weight: 700;
-    
 }
 
 .hero__text {
@@ -46,15 +46,17 @@
 }
 
 .hero__link {
-    display: inline-block;
+    width:14.6528vw;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--base-font);
     font-size: var(--font-medium-18);
     background-color: var(--light-bg-solid);
-    padding: var(--spacing-12) var(--spacing-68);
     border-radius: 50px;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
-    
 }
 
 .hero__link:hover {
@@ -71,12 +73,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: var(--spacing-16) 0;
     height: 600px;
+    width: 83.3333vw;
 }
 
 .collection:nth-child(2) .collection__cover {
     order: -1;
+    
 }
 
 .collection__content {
@@ -84,22 +87,34 @@
     flex-direction: column;
     gap: var(--spacing-24);
     align-items: start;
+    height: 297px;
+    width: 44.7917vw;
+    
 }
 
 .collection__title {
     font-family: var(--alternative-font);
     font-size: var(--font-display-46);
     font-weight: 500;
-    
+    width: 35.6250vw;
+   
 }
 
 .collection__text {
     font-family: var(--alternative-font);
     font-size: var(--font-large-24);
     font-weight: 400;
-    border-bottom: 2px solid var(--primary-solid);
-    padding-bottom:  var(--spacing-20);
+    
+    width: 31.8056vw;
+    height: 56px;
 }
+
+.collection__line {
+    width: 44.79vw;
+    height: 3px;
+    border-bottom: 3px solid var(--primary-solid);
+}
+
 
 
 

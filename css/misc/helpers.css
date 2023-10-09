@@ -1,4 +1,10 @@
 .container {
-    max-width: 80vw;
+    max-width: 83.3333vw;
     margin: 0 auto;
+}
+
+.container__end {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
