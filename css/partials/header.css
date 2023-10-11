@@ -8,7 +8,6 @@ header {
     align-items: center;
 }
 
-
 .navbar {
     width: 83.3333vw;
     display: flex;
@@ -22,7 +21,6 @@ header {
     height: 65.19px;
     display: flex;
     align-items: center;
-    
 }
 
 .navbar__menu {
@@ -30,30 +28,44 @@ header {
     justify-content: space-around;
     align-items: center;
     gap: 1.38vw;
-    width: 28.19vw;
+    width: 450px;
+    height: 41px;
+}
+
+.navbar__iconShop__container {
+    width: 100px;
+    height: 31px;
+}
+
+.navbar__icon__arrowDown {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 23px;
+    margin-bottom: 2px;
+}
+
+.navbar__icon__arrowDown:hover {
+    cursor: pointer;
 }
 
 .navbar__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: var(--font-lmedium-20);
     transition: background 0.3s ease-in-out;
     position: relative;
+    padding: 5px;
+    
 }
 
 .navbar__link:hover {
     background-color: var(--primary-900);
 }
 
-.with-icon {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-8);
-}
-
-.with-submenu:hover .submenu {
-    display: block;
-} 
-
 .submenu {
+    
     display: none;
     width: 300px;
     position: absolute;
@@ -72,6 +84,35 @@ header {
     background-color: var(--primary-900);
 }
 
-.header__dropdown{
-    color: var(--light-font-solid);
+.cart__header {
+    display: flex;
+    align-items: center;
+    position: relative;
 }
+
+.cart__header img {
+    width: 31px;
+    height: 27px;
+    margin-bottom: 3px; 
+}
+
+.navbar__item__cart {
+    position: relative;
+}
+
+.iconQuantityCart {
+    display: none;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 0;
+    color: var(--light-font-solid);
+    margin-top: -10px;
+    margin-right: -10px;
+    background-color: var(--primary-solid);
+    border-radius: 50%;
+    font-size: var(--font-small-16);
+    text-align: center;
+}
+
