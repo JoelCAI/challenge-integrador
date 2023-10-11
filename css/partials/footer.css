@@ -2,25 +2,56 @@
 .footer {
     background-color: var(--dark-bg-solid);
     height: 343px;
+    position: relative;
 }   
 
 .footer__navbar {
-    width: 83.3333vw;
-    height: 271px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 343px;
+    position: relative;
 }
 
 .footer__navbar__container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    align-items: flex-start;
+    position: absolute;
+    top: 153.69px;
 }
 
 .footer__copy {
+    position: absolute;
+    bottom: 23px;
+    left: 520px;
     text-align: center;
     font-size: var(--font-lmedium-20);
+    height: 23px;
+    color: var(--light-font-solid);
 }
 
+.footer__navbar__img {
+    position: absolute;
+    top: 124px;
+    right: 0;
+}
 
+.footer__navbar__img img {
+    width: 143px;
+    height: 116.19px;
+}
+
+/* Admin Pages */
+.footer__navbar__container--modified {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    position: absolute;
+    top: 85px;
+}
+
+.footer__navbar__img--modified {
+    position: absolute;
+    top: 124px;
+    right: 0;
+}

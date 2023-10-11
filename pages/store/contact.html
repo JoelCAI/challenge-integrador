@@ -16,9 +16,12 @@
                 </a>
             </picture>
             <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="../../pages/store/shop.html">SHOP<iconify-icon icon="mdi:chevron-down" class="header__dropdown"></iconify-icon></a>
-                    <ul class="submenu">
+                <li class="with-submenu">
+                    <div class="navbar__link navbar__iconShop__container">
+                        <a class="" href="../../pages/store/shop.html">SHOP</a>
+                        <img class="navbar__icon__arrowDown" id="navbar__icon__arrowDown" src="../../img/icons/arrowDownWhite.png" alt="Flecha hacia abajo">
+                    </div>
+                    <ul class="submenu" id="submenu">
                         <li class="submenu__item">
                             <a href="" class="submenu__link">Funkos</a>
                         </li>
@@ -36,41 +39,27 @@
                 <li class="navbar__item">
                     <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="../../pages/store/cart.html">
-                        <img src="../../img/icons/cart-icon.svg" alt="carrito">
+                <li class="navbar__item__cart">
+                    <a class="cart__header" href="../../pages/store/cart.html">
+                        <img class="cart__header--front" src="../../img/icons/cart-iconWhite.svg" alt="carrito">
+                        <p type="number" class="iconQuantityCart" id="iconQuantityCart">0</p>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="pruebapix"> 
-        
-        <p class="pruebapix4">hola</p>
-        
-        <p class="pruebapix5">como te va </p>
-        
-        <p class="pruebapix6">todo </p>
-    </div>
-
-    <div class="pruebapix2"> </div>
-    <div class="pruebapix3"> </div>
-
     <footer class="footer">
         <nav class="container footer__navbar">
             <ul class="footer__navbar__container">
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../store/shop.html">SHOP</a>
+                    <a class="navbar__link" href="./pages/admin/register.html">SHOP</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+                    <a class="navbar__link" href="./pages/admin/login.html">INGRESAR</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../store/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="./pages/store/contact.html">CONTACTO</a>
                 </li>            
             </ul>
             <picture class="footer__navbar__img">
@@ -79,6 +68,8 @@
         </nav>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script src="../../js/header.js"></script>
+
 </body>
 </html>

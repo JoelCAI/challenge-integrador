@@ -17,9 +17,12 @@
                 </a>
             </picture>
             <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./pages/store/shop.html">SHOP<iconify-icon icon="mdi:chevron-down" class="header__dropdown"></iconify-icon></a>
-                    <ul class="submenu">
+                <li class="with-submenu">
+                    <div class="navbar__link navbar__iconShop__container">
+                        <a class="" href="./pages/store/shop.html">SHOP</a>
+                        <img class="navbar__icon__arrowDown" id="navbar__icon__arrowDown" src="./img/icons/arrowDownWhite.png" alt="Flecha hacia abajo">
+                    </div>
+                    <ul class="submenu" id="submenu">
                         <li class="submenu__item">
                             <a href="" class="submenu__link">Funkos</a>
                         </li>
@@ -37,9 +40,10 @@
                 <li class="navbar__item">
                     <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="./pages/store/cart.html">
-                        <img src="./img/icons/cart-icon.svg" alt="carrito">
+                <li class="navbar__item__cart">
+                    <a class="cart__header" href="./pages/store/cart.html">
+                        <img class="cart__header--front" src="./img/icons/cart-iconWhite.svg" alt="carrito">
+                        <p type="number" class="iconQuantityCart" id="iconQuantityCart">0</p>
                     </a>
                 </li>
             </ul>
@@ -154,17 +158,14 @@
     </main>
     
 <!--FOOTER-->    
-    <footer class="footer">
-        <nav class="container footer__navbar">
-            <ul class="footer__navbar__container">
+    <footer class="footer ">
+        <nav class="footer__navbar container">
+            <ul class="footer__navbar__container  container">
                 <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/store/shop.html">SHOP</a>
+                    <a class="navbar__link" href="./pages/admin/register.html">SHOP</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/admin/register.html">REGISTRARSE</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="./pages/admin/login.html">INGRESAR</a>
                 </li>
                 <li class="navbar__item">
                     <a class="navbar__link" href="./pages/store/contact.html">CONTACTO</a>
@@ -174,10 +175,12 @@
                 <img src="./img/branding/isotype.svg" alt="Logo Funkoshop">
             </picture>
         </nav>
-        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy</p>
     </footer>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+ 
+    <script src="./js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="./js/glide.js"></script>
+
 </body>
 </html>

@@ -98,7 +98,7 @@
 }
 
 .cart__resumen__elements--total {
-    border-top: 2px solid var(--primary-solid);
+    border-top: 3px solid var(--primary-solid);
     height: 32px;
     padding: 8px 0px 0px 0px;
 }

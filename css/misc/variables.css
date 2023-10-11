@@ -30,14 +30,14 @@
     --arrow-pagination-icon: #C4CDD5;
     --arrow-pagination-bg: #919EAB;
     --gray-resumen: #747474;
-
-
+   
     /* Typography */
     --base-font: 'Inter', sans-serif;
     --alternative-font: 'Raleway', sans-serif;
 
     /* Font-sizes */
     --font-display-46: 4.6em;
+    --font-ljumboo-42:4.2em;
     --font-jumbo-38: 3.8em;
     --font-sjumbo-32: 3.2em;
     --font-xlarge-30: 3em;

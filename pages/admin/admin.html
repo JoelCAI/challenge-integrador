@@ -16,38 +16,104 @@
                 </a>
             </picture>
             <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="../../pages/store/shop.html">SHOP<iconify-icon icon="mdi:chevron-down" class="header__dropdown"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">LLaveros</a>
-                        </li>
-                    </ul>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/store/shop.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../../pages/store/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="../../pages/admin/admin.html">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="../../index.html">SALIR</a>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="../../pages/store/cart.html">
-                        <img src="../../img/icons/cart-icon.svg" alt="carrito">
-                    </a>
-                </li>
+               
             </ul>
         </nav>
     </header>
 
+    <main class="container">
+
+        <section class="searchItem">
+            <label for="searchItem__input" ><img class="searchItem__img" src="../../img/icons/search_icon.svg" alt="Icon Search Admin"></label>
+            <input class="searchItem__input" type="text" id="searchItem__input" value="" placeholder="código, nombre o categoría">
+        </section>
+
+        <section class="listProduct__container">
+            <p class="listProduct__title">
+                Listado de Productos    
+            </p>
+            <div class="addProduct__container">
+                <p class="addProduct__title">
+                    Agregar
+                </p>
+                <img class="addProduct__img" src="../../img/icons/addProduct.png" alt="">
+            </div>
+        </section>
+
+        <section class="attibuteTable__container">
+            <section class="attibuteTable__title">
+                <p class="attibuteTable__title__font" id="idProductTitle">ID</p>
+                <p class="attibuteTable__title__font" id="skuProductTitle">Código</p>
+                <p class="attibuteTable__title__font" id="nameroductTitle">Nombre del Producto</p>
+                <p class="attibuteTable__title__font" id="categoryProductTitle">Categoría</p>
+            </section>
+        </section>
+
+        <section class="attibuteTableData__container">
+                <section class="attibuteTable__data">
+                    <p class="attibuteTable__data__font" id="idProductTitle">1</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="skuProductTitle">swt001001</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__capitalize" id="nameroductTitle">baby yoda blueball</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="categoryProductTitle">star wars</p>
+                    <div class="attibuteTable__data__icons">
+                        <img class="attibuteTable__data__img" src="../../img/icons/edit_pencil.svg" alt="Edit Pencil">
+                        <img class="attibuteTable__data__img" src="../../img/icons/delete_trash.svg" alt="Edit Pencil">
+                    </div>
+
+                    <p class="attibuteTable__data__font" id="idProductTitle">2</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="skuProductTitle">swt001002</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__capitalize" id="nameroductTitle">boba fett figther</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="categoryProductTitle">star wars</p>
+                    <div class="attibuteTable__data__icons">
+                        <img class="attibuteTable__data__img" src="../../img/icons/edit_pencil.svg" alt="Edit Pencil">
+                        <img class="attibuteTable__data__img" src="../../img/icons/delete_trash.svg" alt="Edit Pencil">
+                    </div>
+
+                    <p class="attibuteTable__data__font" id="idProductTitle">3</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="skuProductTitle">swt001003</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__capitalize" id="nameroductTitle">luke skylwalker & grogu</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="categoryProductTitle">star wars</p>
+                    <div class="attibuteTable__data__icons">
+                        <img class="attibuteTable__data__img" src="../../img/icons/edit_pencil.svg" alt="Edit Pencil">
+                        <img class="attibuteTable__data__img" src="../../img/icons/delete_trash.svg" alt="Edit Pencil">
+                    </div>
+
+                    <p class="attibuteTable__data__font" id="idProductTitle">4</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="skuProductTitle">swt001004</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__capitalize" id="nameroductTitle">stormtrooper lightsaber</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="categoryProductTitle">star wars</p>
+                    <div class="attibuteTable__data__icons">
+                        <img class="attibuteTable__data__img" src="../../img/icons/edit_pencil.svg" alt="Edit Pencil">
+                        <img class="attibuteTable__data__img" src="../../img/icons/delete_trash.svg" alt="Edit Pencil">
+                    </div>
+
+                    <p class="attibuteTable__data__font" id="idProductTitle">12</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="skuProductTitle">hpt001003</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__capitalize" id="nameroductTitle">luna lovegood lion mask</p>
+                    <p class="attibuteTable__data__font attibuteTable__data__upper" id="categoryProductTitle">harry potter</p>
+                    <div class="attibuteTable__data__icons">
+                        <img class="attibuteTable__data__img" src="../../img/icons/edit_pencil.svg" alt="Edit Pencil">
+                        <img class="attibuteTable__data__img" src="../../img/icons/delete_trash.svg" alt="Edit Pencil">
+                    </div>
+
+                    
+                </section>
+        </section>
+        
+    </main>
+
     <footer class="footer">
         <nav class="container footer__navbar">
-            <ul class="footer__navbar__container">
+            <ul class="footer__navbar__container--modified">
                 <li class="navbar__item">
                     <a class="navbar__link" href="../store/shop.html">SHOP</a>
                 </li>
@@ -61,12 +127,14 @@
                     <a class="navbar__link" href="../store/contact.html">CONTACTO</a>
                 </li>            
             </ul>
-            <picture class="footer__navbar__img">
+            <picture class="footer__navbar__img--modified">
                 <img src="../../img/branding/isotype.svg" alt="Logo Funkoshop">
             </picture>
         </nav>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    <script src="../../js/header.js"></script>
+
 </body>
 </html>
