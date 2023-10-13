@@ -27,11 +27,14 @@
     font-weight: 500;
 }
 
+.formQuery__buscar::placeholder {
+    color: var(--gray-create);
+}
+
 .formQuery__order {
     width: 16.8771vw;
     font-size: var(--font-large-24);
     font-weight: 500;
-    
 }
 
 .selectOption__shop {
@@ -72,7 +75,11 @@
     color: var(--dark-bg-solid);
     font-size: var(--font-lmedium-20);
     text-align: center;
-}    
+}  
+
+.formQuery__input__range::placeholder {
+    color: var(--gray-create);
+}
 
 .formQuery__input__range__img {
     width: 20px;
@@ -122,12 +129,14 @@
     border-radius: 6px;
     color: var(--dark-bg-solid);
     display: flex;
+    cursor: pointer;
 }
 
 .formQuery__checkbox__label {
     font-size: var(--font-medium-18);
     font-weight: 500;
     margin-left: 0.4167vw;
+    cursor: pointer;
 }
 
 /* Fetch Products */

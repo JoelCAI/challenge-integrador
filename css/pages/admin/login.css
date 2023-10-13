@@ -1,0 +1,45 @@
+.loginRegisterButtons__container {
+    width: 273.48px;
+    height: 78.35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--spacing-36);
+}
+
+.loginRegisterButtons {
+    width: 273.48px;
+    height: 39.06px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 41.23px;
+}
+
+.loginSubmit {
+    width: 103px;
+    height: 39.06px;
+}
+
+.loginRegisterSubmit {
+    font-family: var(--base-font);
+    font-size: var(--font-vsmall-12);
+    font-weight: 400;
+}
+
+.loginCheckSubmit{
+    width: 129.25px;
+}
+
+.loginCheckSubmit--height {
+    height: 22px;
+}
+
+.loginRegisterLink {
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall-14);
+    font-weight: 400;
+    color: var(--secondary-solid);
+    cursor: pointer;
+}

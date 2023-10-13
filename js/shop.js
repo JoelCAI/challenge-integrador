@@ -1,6 +1,5 @@
-const form__QueryBuscar = document.getElementById('formQuery--buscar');
+const form__QueryBuscar = document.getElementById('formQueryBuscar');
 const form__Orden = document.getElementById('form__Orden');
-
 
 const formShop = {
     valueforSearch: '',
@@ -12,6 +11,8 @@ const productInStore = {
     name: 'Musica',
     
 }
+
+form__QueryBuscar.style.color = '#000000';
 
 form__QueryBuscar.addEventListener('keyup', (e) => {
     if (e.target.value === productInStore.name) {
@@ -25,6 +26,7 @@ form__Orden.addEventListener('change', () => {
     formShop.orderFor = form__Orden.value
     console.log(formShop.orderFor + ' elegida')
 })
+
 
 
 const formQuery__checkbox__nuevos = document.getElementById('formQuery__checkbox__nuevos');
@@ -100,6 +102,24 @@ else {
 const body = document.querySelector('body')
 
 console.log(body.textContent)
+
+
+const form__OrdenColor = document.getElementById('form__Orden');
+
+form__OrdenColor.style.color ='#B9B9B9';
+
+form__OrdenColor.addEventListener('change', (e) => changeColor(e.target.value, 'form__Orden'));
+
+const changeColor = (a,b) => {
+
+    let colorOption = a;
+    let valueOption = document.getElementById(b);
+
+    (colorOption === 'gray') 
+        ? valueOption.style.color = '#B9B9B9'
+        : valueOption.style.color = '#000000'; 
+   
+}
 
 
 
