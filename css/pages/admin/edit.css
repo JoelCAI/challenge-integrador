@@ -1,0 +1,20 @@
+.editProductImage__container {
+    width: 324.22px;
+    height: 173px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-28);
+}
+
+.editProductImage {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-solid);
+    cursor: pointer;
+}
+
