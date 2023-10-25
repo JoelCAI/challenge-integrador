@@ -1,0 +1,111 @@
+/* Input Text*/
+.inputText {
+    border: 2px solid var(--dark-bg-solid);
+    border-radius: 6px;
+    padding: var(--spacing-12);
+    color:  red ;
+}
+
+/* Select Container */
+.selectOptionLeftSide {
+    border: 2px solid var(--dark-bg-solid);
+    border-radius: 6px;
+    appearance: none;
+    color: var(--dark-bg-solid);
+    position: relative;
+    background-image: url(../../img/icons/triangleBlack.png);
+    background-repeat: no-repeat;
+    background-size: 1.1889vw;
+    background-position: 5%;
+    cursor: pointer;
+}
+
+.selectOption {
+    border: 2px solid var(--dark-bg-solid);
+    border-radius: 6px;
+    appearance: none;
+    color: var(--dark-bg-solid);
+    position: relative;
+    background-image: url(../../img/icons/triangleBlack.png);
+    background-repeat: no-repeat;
+    background-size: 1.1889vw;
+    background-position: 95%;
+    cursor: pointer;
+    
+}
+
+.selectionDefaultColor {
+    color: var(--black-solid);
+}
+
+/* input underline*/
+.inputUnderline {
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    
+}
+
+/* Login Register Buttons */
+.loginRegister__Container {
+    width: 515px;
+    height: 289.13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--spacing-36) auto;
+}
+
+.loginRegisterTitle {
+    width: 515px;
+    height: 49px;
+    font-family: var(--alternative-font);
+    font-size: var(--font-ljumboo-42);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.loginRegisterEmail__container {
+    width: 380.87px;
+    height: 30.18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 27.07px;
+}
+
+.loginRegisterEmail__title {
+    font-family: var(--base-font);
+    font-size: var(--font-large-24);
+    font-weight: 400;
+    text-transform: capitalize; 
+}
+
+.loginRegisterEmail__size {
+    width: 208.6px;
+    height: 25.18px;
+    font-family: var(--base-font);
+    font-size: var(--font-small-16);
+    font-weight: 400;
+    
+    padding-bottom: 5px;
+}
+
+.loginRegisterEmail__size::placeholder {
+    color: var(--gray-create);
+}
+
+.loginRegisterEmailPass__size {
+    width: 208.6px;
+    height: 25.18px;
+    font-family: var(--base-font);
+    font-size: var(--font-small-16);
+    font-weight: 400;
+    text-transform: lowercase;
+    padding-bottom: 5px;
+}
+
+.loginRegisterEmailPass__size::placeholder {
+    color: var(--gray-create);
+    font-size: 70px;
+}
