@@ -1,0 +1,123 @@
+<%- include('../partials/header') %>
+
+<main class="container">
+    <section class="item">
+        <picture class="card-item__cover">
+            <img class="card-item__img--front" src="../../img/<%- item.productImageFront %>" alt="<%- item.productDescription %>">
+            <img class="card-item__img--back" src="../../img/<%- item.productImageBack %>" alt="<%- item.productDescription %>">
+        </picture>
+        <article class="item__info">
+            <p class="item__licence"><%- item.licenceName %></p>
+            <h3 class="item__name"><%- item.productName %></h3>
+            <p class="item__description"><%- item.productDescription %></p>
+            <p class="item__price"><%- item.productPrice %></p>
+            <div class="item__cart">
+                <div class="item__cart__quantity">
+                    <input class="item__input" type="number" name=""  placeholder="0" id="quantity" value="0">
+                    <div class="item__cart__buttons">
+                        <button class="item__quantity--button" id="add" type="button"><img src="../../img/icons/add.png"></button>
+                        <button class="item__quantity--button" id="subtract" type="button"><img src="../../img/icons/subtract.png"></button>
+                    </div>
+                </div>
+                <div class="item__agregar__button">
+                    <button class="btn__primary item__agregar__button__font" type="submit" id="submit_addCart">Agregar al Carrito</button>
+                </div>
+                
+            </div>
+            <p class="item__promo"><a class="item__promo__link" href="">Ver Métodos de Pago</a> - 3 CUOTAS SÍN INTERÉS</p>
+        </article>
+       
+    </section>
+    
+</main>
+
+<section class="slider container glide">
+    <h2 class="slider__title">Productos Relacionados</h2>
+    <div class="glide__track" data-glide-el="track">
+        <ul class="slider__items glide__slides">
+            <li class="slider__item glide__slide">
+                    <article class="card-item">
+                        <a class="card-item__link" href="../../pages/store/item.html">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura de la saga Star Wars">
+                                <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura de la saga Star Wars en caja">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">STAR WARS</p>
+                                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                                <p class="card-item__price">$1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </article>
+            </li>
+            <li class="slider__item glide__slide">
+                    <article class="card-item">
+                        <a class="card-item__link" href="../../pages/store/item.html">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="Figura de la saga Pokemon">
+                                <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="Figura de la saga Pokemon en caja">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">POKEMON</p>
+                                <h4 class="card-item__name">PIDGEOTTO</h4>
+                                <p class="card-item__price">$1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </article>
+            </li>
+            <li class="slider__item glide__slide">
+                    <article class="card-item">
+                        <a class="card-item__link" href="../../pages/store/item.html">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp" alt="Figura de la saga Harry Potter">
+                                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp" alt="Figura de la saga Harry Potter en caja">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">HARRY POTTER</p>
+                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                <p class="card-item__price">$1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </article>
+            </li>
+        </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="tabler:chevron-left"></iconify-icon></button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="tabler:chevron-right"></iconify-icon></button>
+    </div>
+</section>
+
+<footer class="footer">
+    <nav class="container footer__navbar">
+        <ul class="footer__navbar__container">
+            <li class="navbar__item">
+                <a class="navbar__link" href="./shop.html">SHOP</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="./contact.html">CONTACTO</a>
+            </li>           
+        </ul>
+        <picture class="footer__navbar__img">
+            <img src="../../img/branding/isotype.svg" alt="Logo Funkoshop">
+        </picture>
+    </nav>
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
+
+<script src="../../js/header.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="../../js/glide.js"></script>
+<script src="../../js/item.js"></script>
+
+</body>
+</html>  

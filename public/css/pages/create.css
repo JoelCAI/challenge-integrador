@@ -157,7 +157,7 @@
 }
 
 .createProductPrice__container {
-    width: 227.96px;
+    width: 237.96px;
     height: 29px;
     display: flex;
     justify-content: space-between;
@@ -217,7 +217,7 @@
 }
    
 .createProductDiscount {
-    width: 647.53px;
+    width: 657.53px;
     height: 29px;
     display: flex;
     justify-content: space-between;
@@ -226,11 +226,12 @@
 }
 
 .createProductDiscount__container {
-    width: 201.52px;
+    width: 231.52px;
     height: 29px;
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
+    
 }
 
 .createProductDiscount__title {
@@ -244,10 +245,10 @@
 }
 
 .createProductDiscount__input {
-    width: 55px;
+    width: 35px;
     height: 29px;
     font-family: var(--base-font);
-    font-size: var(--font-medium-18);
+    font-size: var(--font-lmedium-20);
     font-weight: 400;
 }
 

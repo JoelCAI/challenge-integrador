@@ -109,3 +109,8 @@
     color: var(--gray-create);
     font-size: 70px;
 }
+
+.buttonDelete {
+    border: none;
+    background-color: white;
+}

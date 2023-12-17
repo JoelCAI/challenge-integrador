@@ -1,0 +1,98 @@
+<%- include('../partials/header') %>
+<main class="container">
+    <section class="cart__title__container">
+        <p class="cart__title">Carrito de Compras</p>
+    </section>
+    <section class="cart__attribute__container">
+        <p class="cart__attribute__font">Detalle de Producto</p>
+        <p class="cart__attribute__font">Cantidad</p>
+        <p class="cart__attribute__font">Total</p>
+    </section>
+    <section class="cart__item__container container">
+        <div class="cart__item__detail">
+            <picture class="cart__item__picture">
+                <img src="../../img/star-wars/baby-yoda-1.webp" alt="baby yoda">
+            </picture>
+            <article class="cart__item__content">
+                <p class="cart__item__title">Baby Yoda BlueBall</p>
+                <p class="cart__item__description">Star Wars</p>
+                <p class="cart__item__price"><span class="cart__item__priceTitle">precio: </span>$ 1799,99</p>
+            </article>
+        </div>
+        <div class="cart__item__quantity__">
+            <div class="item__cart ">
+                <div class="item__cart__quantity">
+                    <input class=" item__input__Quantity " type="number" name=""  placeholder="0" id="quantityCart" value="0">
+                    <div class="item__cart__buttons item__cart__modified">
+                        <button class="item__quantity--button btn__primaryColor" id="addCart" type="button"><img src="../../img/icons/add.png"></button>
+                        <button class="item__quantity--button btn__primaryColor" id="subtractCart" type="button"><img src="../../img/icons/subtract.png"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="cart__item__priceQuantity">$ 3599,98</p>
+        <p class="cart__item__img">
+            <img src="../../img/icons/x.png" alt="x">
+        </p>
+    </section>
+    <section class="cart__item__container container">
+        <div class="cart__item__detail">
+            <picture class="cart__item__picture">
+                <img src="../../img/star-wars/baby-yoda-1.webp" alt="baby yoda">
+            </picture>
+            <article class="cart__item__content">
+                <p class="cart__item__title">Baby Yoda BlueBall</p>
+                <p class="cart__item__description">Star Wars</p>
+                <p class="cart__item__price"><span class="cart__item__priceTitle">precio: </span>$ 1799,99</p>
+            </article>
+        </div>
+        <div class="cart__item__quantity__">
+            <div class="item__cart ">
+                <div class="item__cart__quantity">
+                    <input class=" item__input__Quantity " type="number" name=""  placeholder="0" id="quantityCart" value="0">
+                    <div class="item__cart__buttons item__cart__modified">
+                        <button class="item__quantity--button btn__primaryColor" id="addCart" type="button"><img src="../../img/icons/add.png"></button>
+                        <button class="item__quantity--button btn__primaryColor" id="subtractCart" type="button"><img src="../../img/icons/subtract.png"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="cart__item__priceQuantity">$ 3599,98</p>
+        <p class="cart__item__img">
+            <img src="../../img/icons/x.png" alt="x">
+        </p>
+    </section>
+
+    <section class="cart__title__container cart__title__container--resumen">
+        <p class="cart__title cart__title--resumen">Resumen</p>
+    </section>
+    
+    <section class="container container__end">
+        <div class="cart__resumen__container">
+            <div class="cart__resumen__elements">
+                <p class="cart__resumen__elements__attribute" >Cantidad de Elementos</p>
+                <p class="cart__resumen__elements__attribute cart__resumen__elements__attribute--modified" >3</p>
+            </div>
+            <div class="cart__resumen__elements">
+                <p class="cart__resumen__elements__attribute" >Subtotal</p>
+                <p class="cart__resumen__elements__attribute cart__resumen__elements__attribute--modified" >$ 5.399,97</p>
+            </div>
+            <div class="cart__resumen__elements">
+                <p class="cart__resumen__elements__attribute" >Envio</p>
+                <p class="cart__resumen__elements__attribute cart__resumen__elements__attribute--modified" >$ 0,00</p>
+            </div>
+            <div class="cart__resumen__elements cart__resumen__elements--total">
+                <p class="cart__resumen__elements__attribute cart__resumen__elements__attribute--total" >Total</p>
+                <p class="cart__resumen__elements__attribute cart__resumen__elements__attribute--totalModified" >$ 0,00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container container__end">
+        <div class="cart__resumen__button">
+            <button href="#" class="btn__primary cart__resumen__button__font">Ir a Pagar</button>
+        </div>
+        
+    </section>
+</main>
+<%- include('../partials/footer') %>

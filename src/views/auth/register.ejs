@@ -1,0 +1,50 @@
+<%- include('../partials/header') %>
+<main>
+    <section>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="registerSize__container">
+                <p class="loginRegisterTitle">Crea tu cuenta</p>
+
+                <p class="loginRegisterTitle__welcome">Completa el formulario para ser parte del mundo de los Funkos</p>
+
+                <div class="registerEmail__container">
+                    <label for="registerName" class="loginRegisterEmail__title">Nombre:</label>
+                    <input type="text" class="loginRegisterEmail__size registerCapitalize inputUnderline" id="registerName" placeholder="john">    
+                </div> 
+
+                <div class="registerEmail__container">
+                    <label for="registerLastname" class="loginRegisterEmail__title">Apellido:</label>
+                    <input type="text" class="loginRegisterEmail__size registerCapitalize inputUnderline" id="registerLastname" placeholder="doe">    
+                </div> 
+
+                <div class="registerEmail__container">
+                    <label for="registerEmail" class="loginRegisterEmail__title">Email:</label>
+                    <input type="text" class="loginRegisterEmail__size inputUnderline" id="registerEmail" placeholder="johndoe@correo.com">    
+                </div> 
+
+                <div class="registerEmail__container">
+                    <label for="registerPass" class="loginRegisterEmail__title">Contraseña:</label>
+                    <input type="password" class="loginRegisterEmailPass__size inputUnderline" id="registerPass" placeholder=".........">    
+                </div> 
+
+                <div class="registerEmail__container">
+                    <label for="registerRepeatPass" class="loginRegisterEmail__title">Repita Contraseña:</label>
+                    <input type="password" class="loginRegisterEmailPass__size inputUnderline" id="registerRepeatPass" placeholder=".........">    
+                </div> 
+
+                <div class="registerButtons__container">
+                    <div class="registerButtonSubmit">
+                        <input class="registerSubmit btn__primary" type="submit" name="createProductSubmit" id="registerSubmit" value="Registrar">
+                    </div>
+                    <div class="registerCheckSubmit">
+                        <input type="checkbox" class="loginCheckSubmit--height formQuery__checkbox__input" name="formQuery__checkbox__shop" id="loginCheckBox" value="registerCheckBox">
+                        <label class="formQuery__checkbox__label" for ="registerCheckBox" ><img id="checkbox__filter__nuevos__img" class="formQuery__checkbox__filter__img" src="../../img/icons/Check.png" alt="loginCheckBox">Acepto</label>
+                        <a class="registerLink" href="#">Terminos y Condiciones</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+<%- include('../partials/footer') %>

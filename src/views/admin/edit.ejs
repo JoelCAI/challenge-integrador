@@ -1,0 +1,96 @@
+<%- include('../partials/header') %>
+<main class="container">
+
+    <form action="/admin/edit/<%= item.productId %>?_method=PUT" method="POST" enctype="application/x-www-form-urlencoded">
+        <p class="createTitle">Editar item</p>
+
+        <div class="createSelectItem__container">
+            <div class="createSelectItem__category">
+                <label class="createSelectItem__category__label" for="createSelectCategory">Categoría:</label>
+                <select class="selectOption createSelectItem__category__select" name="category" id="category" required>
+                    <% categories.forEach((category, i) => { %>
+                        <option <% if (item.categoryId === i +1) { %>selected<% } %> value="<%= i+1%>"><%= category.categoryName%></option>
+                    <% }); %>
+                </select>
+            </div>
+            <div class="createSelectItem__license">
+                <label class="createSelectItem__category__label" for="createSelectLicense">Licencia:</label>
+                <select class="selectOption createSelectItem__category__select" name="collection" id="collection" required>
+                    <% licences.forEach((licence, i) => { %>
+                        <option <% if (item.licenceId === i +1) { %>selected<% } %> value="<%= i+1%>"><%= licence.licenceName%></option>
+                    <% }); %>
+                </select>
+            </div>
+        </div>
+
+        <div class="createProductName__container">
+            <label for="createProductName" class="createProductName__title">Nombre del Producto:</label>
+            <input type="text" class="createNameProduct__size inputUnderline" name="name" id="name" value="<%= item.productName %>" required>    
+        </div> 
+
+        <textarea class="createProductDescription" name="description" id="description" required><%= item.productDescription %></textarea>
+
+        <div class="createProductAttribute"> 
+            <div class="createProductSKU__container">
+                <label for="createProductSKU" class="createProductSKU__title">SKU</label>
+                <input type="text" class="createProductSKU__input inputUnderline" id="sku" name="sku" value="<%= item.productSKU %>" required>    
+            </div>
+
+            <div class="createProductPrice__container">
+                <label for="createProductPrice" class="createProductPrice__title">Precio:</label>
+                <div><span class="createProductPrice__input ">$ </span><input type="number" class="createProductPrice__input inputUnderline" name="price" id="price"  value="<%= item.productPrice %>" required></div>    
+            </div>
+
+            <div class="createProductStock__container">
+                <label for="createProductStock" class="createProductStock__title">Stock:</label>
+                <input type="number" class="createProductStock__input inputUnderline" name="stock" id="stock" value="<%= item.productStock %>" required>    
+            </div>
+        </div>
+
+        <div class="createProductDiscount"> 
+            <div class="createProductDiscount__container">
+                <label for="createProductDiscount" class="createProductDiscount__title">Descuento:</label>
+                <input type="number" class="createProductDiscount__input inputUnderline" name="discount" id="discount" value="<%= item.productDiscount %>" required>
+                <div><span class="createProductDiscount__input">%</span></div>
+            </div>
+
+            <div class="createPayment__container">
+                <label class="createPayment__label" for="createPaymentSelect">Cuotas:</label>
+                <select class="selectOption createPayment__select" name="dues" id="dues">
+                    <option <% if (item.productDues === 0) { %>selected<% } %> value="0">Sin cuotas</option>
+                    <option <% if (item.productDues === 3) { %>selected<% } %> value="3">3 cuotas s/ interés</option>
+                    <option <% if (item.productDues === 6) { %>selected<% } %> value="6">6 cuotas s/ interés</option>
+                    <option <% if (item.productDues === 9) { %>selected<% } %> value="9">9 cuotas s/ interés</option>
+                    <option <% if (item.productDues === 12) { %>selected<% } %> value="12">12 cuotas s/ interés</option>
+                    <option <% if (item.productDues === 18) { %>selected<% } %> value="18">18 cuotas s/ interés</option>
+                    <option <% if (item.productDues === 24) { %>selected<% } %> value="24">24 cuotas s/ interés</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="createProductImage__container">
+            <label for="createProductImage" class="createProductImage__title">Imágenes:</label>
+            <input type="file" class="createProductImage__input " name="images" id="img" multiple>    
+        </div>
+
+        <div class="editProductImage__container">
+            <div class="editProductImage">
+                <img src="/img<%= item.productImageFront %>" alt="<%= item.productName %>" class="editProductImage__product">
+                <p class="editProductImage__title">Frente</p>
+            </div>
+            <div class="editProductImage">
+                <img src="/img<%= item.productImageBack %>" alt="<%= item.productName %> en caja" class="editProductImage__product">
+                <p class="editProductImage__title">Dorso</p>   
+            </div>
+        </div>
+        
+        <div class="createProductSubmit__container">
+            <div class="createProductSubmit_sucess--active">
+                <input class="createProductSubmit_sucess btn__primary" type="submit" value="Modificar Producto">
+            </div>
+        </div>
+
+   </form>
+   
+</main>
+<%- include('../partials/footer') %>

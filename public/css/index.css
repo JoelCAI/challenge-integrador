@@ -4,32 +4,41 @@
 @import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
 
 /* Misc */
-@import url('../css/misc/variables.css');
-@import url('../css/misc/normalize.css');
-@import url('../css/misc/helpers.css');
-@import url('../css/misc/animations.css');
+@import url('./misc/variables.css');
+@import url('./misc/normalize.css');
+@import url('./misc/helpers.css');
+@import url('./misc/animations.css');
 
 /* Partials */
-@import url('../css/partials/header.css');
-@import url('../css/partials/footer.css');
+@import url('./partials/header.css');
+@import url('./partials/footer.css');
 
 /* Components */
-@import url('../css/components/buttons.css');
-@import url('../css/components/form.css');
-@import url('../css/components/card.css');
-@import url('../css/components/cartItem.css');
-@import url('../css/components/slider.css');
+@import url('./components/buttons.css');
+@import url('./components/card.css');
+@import url('./components/cartItem.css');
+@import url('./components/form.css');
+@import url('./components/slider.css');
 
 /* Pages Store */
-@import url('../css/pages/store/cart.css');
-@import url('../css/pages/store/contact.css');
-@import url('../css/pages/store/home.css');
-@import url('../css/pages/store/item.css');
-@import url('../css/pages/store/shop.css');
+
+@import url('./pages/home.css');
+@import url('./pages/shop.css');
+@import url('./pages/item.css');
+@import url('./pages/admin.css');
+@import url('./pages/login.css');
+@import url('./pages/register.css');
+@import url('./pages/create.css');
+@import url('./pages/edit.css');
+
+@import url('./pages/cart.css');
+@import url('./pages/contact.css');
+@import url('./components/slider.css');
 
 /* Pages Admin */
-@import url('../css/pages/admin/admin.css');
-@import url('../css/pages/admin/create.css');
-@import url('../css/pages/admin/edit.css');
-@import url('../css/pages/admin/login.css');
-@import url('../css/pages/admin/register.css');
+
+
+
+
+
+
