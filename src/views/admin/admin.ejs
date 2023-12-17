@@ -1,0 +1,52 @@
+<%- include('../partials/header') %>
+<main class="container">
+
+    <section class="searchItem">
+        <label for="searchItem__input" ><img class="searchItem__img" src="../../img/icons/search_icon.svg" alt="Icon Search Admin"></label>
+        <input class="searchItem__input" type="text" value="" placeholder="código, nombre o categoría" id="searchAdminInput">
+    </section>
+
+    <section class="listProduct__container">
+        <p class="listProduct__title">
+            Listado de Productos    
+        </p>
+        <div class="addProduct__container">
+            <p class="addProduct__title">
+                Agregar
+            </p>
+            <a href="/admin/create"><img class="addProduct__img" src="../../img/icons/addProduct.png" alt=""></a>
+        </div>
+    </section>
+
+    <section class="attibuteTable__container">
+        <section class="attibuteTable__title">
+            <p class="attibuteTable__title__font" id="idProductTitle">ID</p>
+            <p class="attibuteTable__title__font" id="skuProductTitle">Código</p>
+            <p class="attibuteTable__title__font" id="nameroductTitle">Nombre del Producto</p>
+            <p class="attibuteTable__title__font" id="categoryProductTitle">Categoría</p>
+        </section>
+    </section>
+
+    <section class="attibuteTableData__container">
+                   
+            <section class="attibuteTable__data">
+                <% items.forEach(item => { %>  
+                <p class="attibuteTable__data__font" id="idProductTitle"><%= item.productId %></p>
+                <p class="attibuteTable__data__font attibuteTable__data__upper" id="skuProductTitle"><%= item.productSKU %></p>
+                <p class="attibuteTable__data__font attibuteTable__data__capitalize" id="nameroductTitle"><%= item.productName %></p>
+                <p class="attibuteTable__data__font attibuteTable__data__upper" id="categoryProductTitle"><%= item.licenceName %></p>
+                <div class="attibuteTable__data__icons">
+                    <a href="/admin/edit/<%= item.productId %>"><img class="attibuteTable__data__img" src="/img/icons/edit_pencil.svg" alt="Edit Pencil"></a>
+                    <form action="/admin/delete/<%= item.productId %>?_method=DELETE" method="POST">
+                        <button class="buttonDelete" type="submit">
+                            <img class="attibuteTable__data__img" src="/img/icons/delete_trash.svg" alt="Edit Pencil">
+                        </button>
+                    </form>
+                </div>
+                <% }); %>  
+            </section>
+       
+    </section>
+    
+</main>
+<%- include('../partials/footer') %>

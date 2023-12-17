@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= view.title%></title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+<!--HEADER-->
+    <header>
+        <% if (locals.isLogged) { %>
+            <nav class="navbar container">
+                <picture class="navbar__logo">
+                    <a href="/home">
+                        <img src="/img/branding/logo_light_horizontal.svg" alt="Logo Funkoshop">
+                    </a>
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="/shop">VER TIENDA</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="/admin">ADMIN</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="/auth/logout">SALIR</a>
+                    </li>
+                
+                </ul>
+            </nav>
+        <% } else {%>
+            <nav class="navbar container">
+                <picture class="navbar__logo">
+                    <a href="/home">
+                        <img src="/img/branding/logo_light_horizontal.svg" alt="Logo Funkoshop">
+                    </a>
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="with-submenu">
+                        <div class="navbar__link navbar__iconShop__container">
+                            <a class="" href="/shop">SHOP</a>
+                            <img class="navbar__icon__arrowDown" id="navbar__icon__arrowDown" src="/img/icons/arrowDownWhite.png" alt="Flecha hacia abajo">
+                        </div>
+                        <ul class="submenu" id="submenu">
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Funkos</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Remeras</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">LLaveros</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="">CONTACTO</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="/auth/login">LOGIN</a>
+                    </li>
+                    <li class="navbar__item__cart">
+                        <a class="cart__header" href="/shop/cart">
+                            <img class="cart__header--front" src="/img/icons/cart-iconWhite.svg" alt="carrito">
+                            <p type="number" class="iconQuantityCart" id="iconQuantityCart">0</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        <% } %>
+    </header>

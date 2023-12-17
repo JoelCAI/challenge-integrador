@@ -1,0 +1,92 @@
+<%- include('../partials/header') %>
+<main class="container">
+
+    <form action="/admin/create" method="post" enctype="multipart/form-data">
+        <p class="createTitle">Crear Nuevo item</p>
+
+        <div class="createSelectItem__container">
+            <div class="createSelectItem__category">
+                <label class="createSelectItem__category__label" for="createSelectCategory">Categoría:</label>
+                <select class="selectOption createSelectItem__category__select" name="category" id="category" required>
+                    <option value="gray" disable selected>Seleccionar</option>
+                    <% categories.forEach((category, i) => { %>
+                        <option value="<%= i+1%>"><%= category.categoryName %></option>
+                    <% }); %>
+                </select>
+            </div>
+            <div class="createSelectItem__license">
+                <label class="createSelectItem__category__label" for="createSelectLicense">Licencia:</label>
+                <select class="selectOption createSelectItem__category__select" name="collection" id="collection" required>
+                    <option value="gray" disable selected>Seleccionar</option>
+                    <% licences.forEach((licence, i) => { %>
+                        <option value="<%= i+1%>"><%= licence.licenceName %></option>
+                    <% }); %>
+                </select>
+            </div>
+        </div>
+
+        <div class="createProductName__container">
+            <label for="createProductName" class="createProductName__title">Nombre del Producto:</label>
+            <input type="text" class="createNameProduct__size inputUnderline" name="name" id="name" placeholder="Kakashi Hatake Shippuden Saga" required>    
+        </div> 
+
+        <textarea class="createProductDescription" name="description" id="description" placeholder="Descripción del producto" required></textarea>
+
+        <div class="createProductAttribute"> 
+            <div class="createProductSKU__container">
+                <label for="createProductSKU" class="createProductSKU__title">SKU</label>
+                <input type="text" class="createProductSKU__input inputUnderline" name="sku" id="sku" placeholder="HPT006047" required>    
+            </div>
+
+            <div class="createProductPrice__container">
+                <label for="createProductPrice" class="createProductPrice__title">Precio:</label>
+                <div><span class="createProductPrice__input ">$ </span><input type="number" class="createProductPrice__input inputUnderline" name="price" id="price" placeholder="0.000,00" step=".01"></div>   
+            </div>
+
+            <div class="createProductStock__container">
+                <label for="createProductStock" class="createProductStock__title">Stock:</label>
+                <input type="number" class="createProductStock__input inputUnderline" name="stock" id="stock" placeholder="0" required>    
+            </div>
+        </div>
+
+        <div class="createProductDiscount"> 
+            <div class="createProductDiscount__container">
+                <label for="createProductDiscount" class="createProductDiscount__title">Descuento:</label>
+                <input type="number" class="createProductDiscount__input inputUnderline" name="discount" id="discount" placeholder="0" required>
+                <div><span class="createProductDiscount__input">%</span></div>   
+            </div>
+
+            <div class="createPayment__container">
+                <label class="createPayment__label" for="createPaymentSelect">Cuotas:</label>
+                <select class="selectOption createPayment__select" name="dues" id="dues">
+                    <option value="0" disable selected>0 cuotas</option>
+                    <option class="selectionDefaultColor" value="1">1 cuota sin interés</option>
+                    <option class="selectionDefaultColor" value="3">3 cuotas sin interés</option>
+                    <option class="selectionDefaultColor" value="6">6 cuotas sin interés</option>
+                    <option class="selectionDefaultColor" value="9">9 cuotas sin interés</option>
+                    <option class="selectionDefaultColor" value="12">12 cuotas sin interés</option>
+                    <option class="selectionDefaultColor" value="18">18 cuotas sin interés</option>
+                    <option class="selectionDefaultColor" value="24">24 cuotas sin interés</option>
+        
+                </select>
+            </div>
+        </div>
+
+        <div class="createProductImage__container">
+            <label for="createProductImage" class="createProductImage__title">Imágenes:</label>
+            <input type="file" class="createProductImage__input " name="images" id="img" multiple>    
+        </div>
+        
+        <div class="createProductSubmit__container">
+            <div class="createProductSubmit_sucess--active">
+                <input class="createProductSubmit_sucess btn__primary" type="submit" value="Agregar Producto">
+            </div>
+            <div class="createProductSubmit_sucess--active">
+                <input class="createProductSubmit__cancel btn__primary" type="reset" value="Cancelar">
+            </div>
+        </div>
+
+   </form>
+   
+</main>
+<%- include('../partials/footer') %>
